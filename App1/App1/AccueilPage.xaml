@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AccueilPage"
+             >
+    
+
+    <ContentPage.Content>
+
+        <RelativeLayout>
+            <Image Source="background2.png" Opacity="1" Aspect="AspectFill"
+                   RelativeLayout.WidthConstraint=
+                   "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint=
+                   "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                  RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+                <Label
+                    Text="Switch to the right"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="White"/>
+
+                <Label
+                    Text="Welcome to...&#10;       SRC !"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
+                <!--<Label
+                    Text="How to use it ? &#10;You have 2 tools : a random color (just click on the screen to change your color) and a color picker (if you have rgb code or hexa code, it give you the color which match)...&#10; Now, just follow instructions at the top !"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="Small"
+                    TextColor="Black"/>-->
+                <Label
+                    Text="Made by Pikode"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="Medium"
+                    TextColor="White"/>
+            </Grid>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

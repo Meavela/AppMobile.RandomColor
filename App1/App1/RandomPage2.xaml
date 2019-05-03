@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.RandomPage2">
+    <StackLayout
+            x:Name="RandomPageBakcgroud"
+            VerticalOptions="Fill"
+        >
+        <Label
+            Text="Switch to the left"
+            VerticalOptions="StartAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+        <Grid
+                VerticalOptions="EndAndExpand"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    x:Name="ColorRLabel"   
+                    Text="R = "
+                    HorizontalOptions="Center"
+                    FontSize="Large"
+                />
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="ColorGLabel"   
+                    Text="G = "
+                    HorizontalOptions="Center"
+                    FontSize="Large"
+                />
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    x:Name="ColorBLabel"   
+                    Text="B = "
+                    HorizontalOptions="Center"
+                    FontSize="Large"
+                />
+            <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    x:Name="HexLabel"    
+                    Text="Hex ="
+                    HorizontalOptions="Center"
+                    FontSize="Large"
+                />
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>
